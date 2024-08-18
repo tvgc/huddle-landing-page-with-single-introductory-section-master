@@ -1,0 +1,168 @@
+/*
+- ELEMENTS
+- FONTS
+- GENERICS (regras genericas. não aprendi o que é)
+- UTILITIES
+- RESET (reset de elementos)
+*/
+
+
+
+/*-----------------------------------*\
+  #FONTS
+\*-----------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+/**/
+
+
+
+/*-----------------------------------*\
+  #VARIABLES
+\*-----------------------------------*/
+
+:root {
+    /**
+     * COLORS
+    */
+
+    /* Primary */
+
+    --color1: #684BB1;
+    --color2: #E880E8;
+    --color3: #FF52C1;
+
+    /* Neutral */
+
+    --neutral1: hsla(0, 0%, 100%, 1);
+    --neutral2: hsla(230, 60%, 8%, 1);
+
+
+    /**
+     * TYPOGRAPHY
+    */
+
+    /* Font Families */
+
+    --ff-body: 'Open Sans', sans-serif;
+    --ff-title: 'Poppins', sans-serif;
+
+
+    /* Font Sizes */
+    --fs-standard: 1.5rem;
+
+    /**
+     * MEASUREMENTS
+    */
+
+
+}
+
+@media (min-width: 770px) {
+    :root {
+
+        /**
+         * TYPOGRAPHY
+        */
+
+        /* Font Sizes */
+
+
+
+    }
+}
+
+@media (min-width: 1100px) {
+    :root {
+
+        /**
+         * TYPOGRAPHY
+        */
+
+        /* Font Sizes */
+
+
+    }
+}
+
+
+
+
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+input,
+button {
+    background: none;
+    border: none;
+    font: inherit;
+    color: inherit;
+    outline: none;
+}
+
+
+
+
+/*-----------------------------------*\
+  #ELEMENTS
+\*-----------------------------------*/
+
+input {
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--ff-body);
+    font-weight: 800;
+    color: #FFFFFF;
+}
+
+html {
+    font-family: var(--ff-body);
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: var(--fs-standard);
+    font-family: var(--ff-body);
+    overflow-x: hidden;
+    background-color: #080C20;
+    color: var(--color3);
+    min-height: 100vh
+}
