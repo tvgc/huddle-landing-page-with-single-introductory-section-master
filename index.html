@@ -8,7 +8,9 @@
 
   <link rel="icon" type="assets/image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
 
   <title>Frontend Mentor | Huddle landing page with single introductory section</title>
 
@@ -22,39 +24,45 @@
     .attribution a {
       color: hsl(228, 45%, 44%);
     }
+
+    footer {
+      background-color: white;
+    }
   </style>
 </head>
 
 <body>
-  <section class="hero">
-    <div class="hero-top">
-      <img src="assets/images/logo.svg" alt="logo">
-    </div>
-
-    <div class="hero-main-container">
-      <div class="hero-main-container-left">
-        <img src="assets/images/illustration-mockups.svg" alt="">
+  <section class="l-hero">
+    <div class="l-container l-hero__container">
+      <div class="l-hero__top">
+        <img class="c-logo" src="assets/images/logo.svg" alt="logo">
       </div>
-
-      <div class="hero-main-container-right">
-        <h1>Build The Community Your Fans Will Love</h1>
-
-        <p>
-          Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create
-          connections with your users as you engage in genuine discussion.
-        </p>
-
-        <button>Register</button>
+      <div class="l-hero__main-container">
+        <div class="l-hero__main-container-left">
+          <img class="c-hero__img" src="assets/images/illustration-mockups.svg" alt="">
+        </div>
+        <div class="c-hero__main-container-right">
+          <h1 class="c-title">Build The Community <br> Your Fans Will Love</h1>
+          <p class="c-hero__content">
+            Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create
+            connections with your users as you engage in genuine discussion.
+          </p>
+          <button class="c-btn">Register</button>
+        </div>
       </div>
-    </div>
-
-    <div class="hero-botton">
-      <div class="icon-container">
-        <a href="" class="icon"></a>
-        <a href="" class="icon"></a>
-        <a href="" class="icon"></a>
+      <div class="l-social-media">
+        <div class="c-icon-container">
+          <a href="" class="c-icon-container__item">
+            <i class="ri-facebook-fill"></i>
+          </a>
+          <a href="" class="c-icon-container__item">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a href="" class="c-icon-container__item">
+            <i class="ri-instagram-line"></i>
+          </a>
+        </div>
       </div>
-    </div>
   </section>
 
 
@@ -64,6 +72,7 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
+  </div>
 </body>
 
 </html>

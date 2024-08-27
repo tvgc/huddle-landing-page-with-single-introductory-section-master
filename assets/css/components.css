@@ -1,0 +1,93 @@
+/*-----------------------------------*\
+  #C-HERO
+\*-----------------------------------*/
+.c-logo {
+    width: 7.5rem;
+    /*120px*/
+}
+
+@media (min-width: 769px) {
+    .c-hero__img {
+        margin-bottom: 0;
+    }
+}
+
+.c-hero__main-container-right {
+    display: inherit;
+    flex-direction: column;
+    max-width: 32.5rem;
+    /*520px*/
+}
+
+.c-title {
+    text-align: center;
+    margin-bottom: var(--space-s-m);
+    /* Space s-m: 16px → 36px */
+}
+
+.c-hero__content {
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+    .c-hero__content {
+        text-align: start;
+    }
+}
+
+.c-btn {
+    margin-top: 1.5rem;
+    margin-inline: auto;
+    width: 12.5rem;
+    /*200px*/
+    height: 2.5rem;
+    /*40px*/
+    background-color: var(--neutral1);
+    color: var(--color1);
+    border-radius: 1.25rem;
+    /*20px*/
+}
+
+@media (min-width: 1024px) {
+    .c-btn {
+        margin-inline: 0;
+    }
+}
+
+.c-btn:hover {
+    background-color: var(--color2);
+    color: var(--neutral1);
+    box-shadow: 2px 4px 9px 3px hsla(0, 0%, 0%, 0.25);
+    transition-property: background-color, color, box-shadow;
+    /* Define as propriedades que serão animadas */
+    transition-duration: 0.3s;
+    /* Define a duração da transição */
+    transition-timing-function: ease;
+    /* Define a função de temporização da transição */
+}
+
+.c-icon-container {
+    display: inherit;
+    gap: var(--space-2xs-xs);
+    /* 8px → 18px */
+}
+
+.c-icon-container__item {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 50%;
+    transition-property: border-color, color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.c-icon-container__item:hover {
+    border-color: var(--color2);
+    /* Cor da borda ao passar o mouse */
+    color: var(--color2);
+    /* Cor do ícone ao passar o mouse */
+}
